@@ -1,0 +1,16 @@
+/*
+	Generated model test.jags command file
+*/
+model in model test.bugs
+data in model test-data.R
+compile, nchains(4)
+parameters in model test-inits1.R, chain(1)
+parameters in model test-inits2.R, chain(2)
+parameters in model test-inits3.R, chain(3)
+parameters in model test-inits4.R, chain(4)
+initialize
+update 1000
+monitor mu, thin(1)
+update 10000
+coda *, stem(model test-cmd1-)
+exit
