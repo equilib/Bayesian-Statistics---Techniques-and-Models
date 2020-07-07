@@ -30,3 +30,5 @@ chain = sample( TuringJagsModel(y), HMC(ϵ, τ), iterations)
 StatsPlots.plot(chain)
 
 print(chain)
+
+plot(chain)
